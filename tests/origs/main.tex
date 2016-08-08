@@ -1,0 +1,62 @@
+% !TEX TS-program = pdflatexmk
+\documentclass[iop,onecolumn,numberedappendix,appendixfloats]{emulateapj}
+\usepackage{amsmath,amssymb,amstext}
+
+\usepackage[breaklinks,colorlinks,citecolor=blue,linkcolor=magenta]{hyperref} 
+\renewcommand*{\sectionautorefname}{Section}
+\usepackage[all]{hypcap} %Links go ts; breaks on deluxetables (use \capstartfalse \capstarttrue to fix it)
+
+\newcommand{\pderiv}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\ppderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\deriv}[1]{\frac{d}{d #1}}
+\newcommand{\cderiv}[1]{\frac{D}{D #1}}
+\newcommand{\del}{\mathbf{\nabla}}
+\renewcommand{\div}{\del \cdot}
+\newcommand{\avg}[1]{\left\langle #1 \right\rangle}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\delr}[1]{\frac{1}{r} \pderiv{r} \left( r #1 \right)}
+\newcommand{\delp}[1]{\frac{1}{r} \pderiv{\phi} \left( #1 \right)}
+\newcommand{\fargo}{FARGO3D }
+
+\usepackage{aas_macros}
+\usepackage{natbib}
+\bibliographystyle{apj}
+
+\shorttitle{Short Title}
+\shortauthors{Dempsey \& Lithwick}
+
+\begin{document}
+
+\title{Criteria for Inner Cavity Opening}
+\author{Adam M. Dempsey \& Yoram Lithwick}
+\affil{Affiliations}
+
+\begin{abstract}
+Abstract.
+\end{abstract}
+
+\keywords{keywords}
+\maketitle
+
+
+
+\input{theory}
+
+\input{methods}
+
+
+
+\acknowledgments{
+}
+\bibliography{migrationbib}
+
+
+\begin{appendix}
+
+\end{appendix}
+
+
+
+
+
+\end{document}
